@@ -1,6 +1,5 @@
 pipeline {
     agent any
-    tools { maven 'Maven 3.6.3' jdk 'Java 9.0.4' }
     stages {
         stage('Build') {
             steps {
@@ -22,7 +21,7 @@ pipeline {
                  branch 'master'
              }
             steps {
-                slackSend channel: 'builds', message: "Build Sucessful ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
+                echo 'we want to deploy if on master TODO' 
             }
         }
     }
