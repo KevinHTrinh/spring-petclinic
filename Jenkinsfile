@@ -21,7 +21,7 @@ pipeline {
 	                 branch 'master'
 	             }
             steps {
-                slackSend channel: 'builds', message: "Build Succeeded ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
+                slackSend channel: 'DT5LZP54K', message: "Build Succeeded ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
             }
 	        }
 	    }
