@@ -20,9 +20,9 @@ pipeline {
 	             when {
 	                 branch 'master'
 	             }
-	            steps {
-	                echo 'we want to deploy if on master TODO' 
-	            }
+            steps {
+                slackSend channel: 'builds', message: "Build Succeeded ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
+            }
 	        }
 	    }
 	}
