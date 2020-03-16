@@ -1,4 +1,3 @@
-soen2345-Q1
 pipeline {
 	    agent any
 	    stages {
@@ -27,5 +26,3 @@ pipeline {
 	        }
 	    }
 	}
-
-master
